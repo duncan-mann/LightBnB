@@ -8,9 +8,9 @@ DROP TABLE IF EXISTS reservations CASCADE;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY NOT NULL,
-    name VARCAR(255) NOT NULL,
-    email VARCAR(255) NOT NULL,
-    password VARCAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE properties (
@@ -19,8 +19,8 @@ CREATE TABLE properties (
 
     title VARCAR(255) NOT NULL,
     description TEXT,
-    thumnail_photo_url VARCAR(255) NOT NULL,
-    cover_photo_url VARCAR(255) NOT NULL,
+    thumnail_photo_url VARCHAR(255) NOT NULL,
+    cover_photo_url VARCHAR(255) NOT NULL,
     cost_per_night INTEGER NOT NULL DEFAULT 0,
     parking_spaces INTEGER NOT NULL DEFAULT 0,
     number_of_bathrooms INTEGER NOT NULL DEFAULT 0,
