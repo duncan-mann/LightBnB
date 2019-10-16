@@ -27,4 +27,3 @@ INSERT INTO guest_reviews (guest_id, owner_id, reservation_id, rating, message)
 VALUES (1, 2, 1, 3, 'Nice'),
 (2, 3, 2, 5, 'Sweet'),
 (3, 1, 3, 1, 'Not great');
-
